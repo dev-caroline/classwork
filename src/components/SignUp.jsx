@@ -14,7 +14,7 @@ const SignUp = () => {
         }else{
             setAllInfo([...AllInfo, info])
             console.log(AllInfo);
-            localStorage.setItem('data', JSON.stringify(AllInfo))
+            localStorage.setItem('data', JSON.stringify(AllInfo)||[])
         }
     }
 
